@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Bienvenido a nuestra Tienda en Línea</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a>
+                    <!-- Menú desplegable -->
+                    <ul>
+                        <li><a href="/Secciones/Basquet.html">Basquet</a></li>
+                        <li><a href="/Secciones/Camping.html">Camping</a></li>
+                        <li><a href="/Secciones/Ciclismo.html">Ciclismo</a></li>
+                        <li><a href="/Secciones/Escalada.html">Escalada</a></li>
+                        <li><a href="/Secciones/Futbol.html">Futbol</a></li>
+                        <li><a href="/Secciones/Hockey.html">Hockey</a></li>
+                        <li><a href="/Secciones/Natacion.html">Natación</a></li>
+                        <li><a href="/Secciones/Running.html">Running</a></li>
+                        <li><a href="/Secciones/Senderismo.html">Senderismo</a></li>
+                        <li><a href="/Secciones/Yoga.html">Yoga</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de productos destacados -->
+    <section id="lista-productos">
+        <h2>Nuestros Productos</h2>
+        <div class="producto">
+            <img src="img/basquet/bolsa de dormir.jpeg" alt="Bolsa de dormir">
+            <h3>Bolsa de dormir individual</h3>
+            <p>Precio: $25.99</p>
+            <p> Tamaño 190 x 100 cm</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <!-- Sección de carrito de compras -->
+    <section id="carrito-de-compras">
+        <h2>Tu Carrito</h2>
+        <div id="items-carrito">
+            <p>Tu carrito está vacío.</p>
+        </div>
+        <button onclick="finalizarCompra()">Finalizar compra</button>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tienda en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Enlace a tu archivo JavaScript -->
+</body>
+</html>
